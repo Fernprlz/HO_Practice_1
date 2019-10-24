@@ -1,0 +1,73 @@
+- presentado == robot ha presentado todos los objetos
+
+
+1. No más de un robot en una sala
+2. Todas las salas deben tener asignado un robot
+3. Un robot no puede estar asignado a menos de dos salas o mas de 3 -> 1 < x < 4
+4. R3, R5, R6 != oeste
+5. R2, R4 != este
+6. Solo los robots asignados a {A, B, o A&B} pueden asignarse a {C, D, o C&D}
+7. Robots no pueden estar en salas que requieran más energia de la que pueden consumir before death
+8. Tiempo de presentaciones en ala oeste = 110% tiempo de presentaciones en ala este
+
+z. Minimizar el tiempo de espera medio de los visitantes Y la compra de los robots
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+set Robots = {R1, R2, R3, R4, R5, R6, R7, R8}
+set Salas = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', P, Q}
+
+set Salas_Oeste = {A, B, C, D, E, F, G, H, I, J}
+set Salas_Este = {K, L, M, N, O, P, Q}
+
+set Salas_5_Objetos = {A, B, C}
+set Salas_6_Objetos = {D, E}
+set Salas_4_Objetos = {F, G, H}
+set Salas_7_Objetos = {I, J}
+set Salas_3_Objetos = {K, L, M}
+set Salas_2_Objetos = {N, O, P, Q}
+
+
+-------------------------------------
+   A B C D E F G H I J K L M N O P Q
+R1 1   1   0 0 1 0 0 0 0 0 0 0 0 0 0
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+--------------------------------------
+
+
+
+
+/*----- 1.En cada COLUMNA solo puede haber un 1, el resto 0*/
+s.t. rest1: 
+/*----- 2. En cada COLUMNA hay siempre exactamente un 1*/
+s.t. rest2:
+/*----- 3. En cada columna hay al menos dos 1's, pero máximo 3*/
+s.t. rest3:
+/*----- 4. x2a-j == 0; x4a-j == 0; x5a-j == 0
+s.t. rest4:
+/*----- 5. x1k-q == 0; x3k-q == 0
+s.t. rest5:
+/*----- 6. xi2 + xi4-16 <= 1; xi3 + xi4-16 <= 1
+s.t. rest6: sum{s in Salas, j in Salas: j = 5} 
+/*----- 7. 
+s.t. rest7:
+/*----- 8.
+s.t. rest8:
+
+
+
+///////////// p r e g u n t a $ ///////////// 
+1. Como utilizamos if statements para las restricciones
+	- Ejemplo restriccion 6:
+		if (robot está en C || D) then (está en A || B) then (solo está en 1 o 0 sala del resto)
+2. Esta restriccion itera como pensamos que itera?
+	s.t. rest9{r in Robots}: sum{o in Salas_Oeste} x[r, o] * Tiempo_R_Sala[r, o] >= 1.1*sum{e in Salas_Este} x[r, e] * Tiempo_R_Sala[r, e];
+3. Función objetivo = suma de las funciones objetivo de ambos problemas?
+   Está bien expresada como el sumatorio usando r y s como indices...
