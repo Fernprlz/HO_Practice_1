@@ -1,0 +1,29 @@
+data;
+
+/*//////////////////////// Problema 1 ////////////////////////*/
+set Puertas := Este, Norte, Oeste;
+set Norte_Oeste := Norte, Oeste;
+set Este := Este;
+set Norte := Norte;
+set Oeste := Oeste;
+
+set Elementos := Maquina_Exp, Torno, Persona;
+set Expendedoras_Tornos := Maquina_Exp, Torno;
+set Tornos := Torno;
+
+param Tiempo_Espera_Inicial :=
+Este 	130
+Norte	90
+Oeste 	100;
+
+param Reduccion_Tiempo_Visitante :=
+Maquina_Exp	2
+Torno		3
+Persona		4;
+
+param Coste_Hora :=
+Maquina_Exp	4
+Torno		5
+Persona		8;
+
+end;
