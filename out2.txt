@@ -100,7 +100,7 @@ Objective:  Tiempo_Espera = 269 (MINimum)
     91 rest8B[R6]                 20                          75 
     92 rest8B[R7]                 40                          85 
     93 rest8B[R8]                 30                          60 
-    94 rest9B                  149.3            -0               
+    94 rest9B                  149.3            -1               
     95 Tiempo_Espera
                                  269                             
 
