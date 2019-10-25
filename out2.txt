@@ -1,0 +1,256 @@
+Problem:    model2
+Rows:       95
+Columns:    136 (136 integer, 0 binary)
+Non-zeros:  892
+Status:     INTEGER OPTIMAL
+Objective:  Tiempo_Espera = 269 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 rest1B[A]                   1             1             = 
+     2 rest1B[B]                   1             1             = 
+     3 rest1B[C]                   1             1             = 
+     4 rest1B[D]                   1             1             = 
+     5 rest1B[E]                   1             1             = 
+     6 rest1B[F]                   1             1             = 
+     7 rest1B[G]                   1             1             = 
+     8 rest1B[H]                   1             1             = 
+     9 rest1B[I]                   1             1             = 
+    10 rest1B[J]                   1             1             = 
+    11 rest1B[K]                   1             1             = 
+    12 rest1B[L]                   1             1             = 
+    13 rest1B[M]                   1             1             = 
+    14 rest1B[N]                   1             1             = 
+    15 rest1B[O]                   1             1             = 
+    16 rest1B[P]                   1             1             = 
+    17 rest1B[Q]                   1             1             = 
+    18 rest2B[R1]                  2             2               
+    19 rest2B[R2]                  2             2               
+    20 rest2B[R3]                  2             2               
+    21 rest2B[R4]                  3             2               
+    22 rest2B[R5]                  2             2               
+    23 rest2B[R6]                  2             2               
+    24 rest2B[R7]                  2             2               
+    25 rest2B[R8]                  2             2               
+    26 rest3B[R1]                  2                           3 
+    27 rest3B[R2]                  2                           3 
+    28 rest3B[R3]                  2                           3 
+    29 rest3B[R4]                  3                           3 
+    30 rest3B[R5]                  2                           3 
+    31 rest3B[R6]                  2                           3 
+    32 rest3B[R7]                  2                           3 
+    33 rest3B[R8]                  2                           3 
+    34 rest4B[R3,A]                0            -0             = 
+    35 rest4B[R3,B]                0            -0             = 
+    36 rest4B[R3,C]                0            -0             = 
+    37 rest4B[R3,D]                0            -0             = 
+    38 rest4B[R3,E]                0            -0             = 
+    39 rest4B[R3,F]                0            -0             = 
+    40 rest4B[R3,G]                0            -0             = 
+    41 rest4B[R3,H]                0            -0             = 
+    42 rest4B[R3,I]                0            -0             = 
+    43 rest4B[R3,J]                0            -0             = 
+    44 rest4B[R5,A]                0            -0             = 
+    45 rest4B[R5,B]                0            -0             = 
+    46 rest4B[R5,C]                0            -0             = 
+    47 rest4B[R5,D]                0            -0             = 
+    48 rest4B[R5,E]                0            -0             = 
+    49 rest4B[R5,F]                0            -0             = 
+    50 rest4B[R5,G]                0            -0             = 
+    51 rest4B[R5,H]                0            -0             = 
+    52 rest4B[R5,I]                0            -0             = 
+    53 rest4B[R5,J]                0            -0             = 
+    54 rest4B[R6,A]                0            -0             = 
+    55 rest4B[R6,B]                0            -0             = 
+    56 rest4B[R6,C]                0            -0             = 
+    57 rest4B[R6,D]                0            -0             = 
+    58 rest4B[R6,E]                0            -0             = 
+    59 rest4B[R6,F]                0            -0             = 
+    60 rest4B[R6,G]                0            -0             = 
+    61 rest4B[R6,H]                0            -0             = 
+    62 rest4B[R6,I]                0            -0             = 
+    63 rest4B[R6,J]                0            -0             = 
+    64 rest5B[R2,K]                0            -0             = 
+    65 rest5B[R2,L]                0            -0             = 
+    66 rest5B[R2,M]                0            -0             = 
+    67 rest5B[R2,N]                0            -0             = 
+    68 rest5B[R2,O]                0            -0             = 
+    69 rest5B[R2,P]                0            -0             = 
+    70 rest5B[R2,Q]                0            -0             = 
+    71 rest5B[R4,K]                0            -0             = 
+    72 rest5B[R4,L]                0            -0             = 
+    73 rest5B[R4,M]                0            -0             = 
+    74 rest5B[R4,N]                0            -0             = 
+    75 rest5B[R4,O]                0            -0             = 
+    76 rest5B[R4,P]                0            -0             = 
+    77 rest5B[R4,Q]                0            -0             = 
+    78 rest6B[R1]                 -1                          -0 
+    79 rest6B[R2]                  0                          -0 
+    80 rest6B[R3]                  0                          -0 
+    81 rest6B[R4]                  0                          -0 
+    82 rest6B[R5]                  0                          -0 
+    83 rest6B[R6]                  0                          -0 
+    84 rest6B[R7]                 -1                          -0 
+    85 rest6B[R8]                  0                          -0 
+    86 rest8B[R1]                 77                         100 
+    87 rest8B[R2]                 40                          90 
+    88 rest8B[R3]                 12                          95 
+    89 rest8B[R4]                 20                          40 
+    90 rest8B[R5]                 12                          45 
+    91 rest8B[R6]                 20                          75 
+    92 rest8B[R7]                 40                          85 
+    93 rest8B[R8]                 30                          60 
+    94 rest9B                  149.3            -0               
+    95 Tiempo_Espera
+                                 269                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[R1,A]      *              1             0               
+     2 x[R2,A]      *              0             0               
+     3 x[R3,A]      *              0             0               
+     4 x[R4,A]      *              0             0               
+     5 x[R5,A]      *              0             0               
+     6 x[R6,A]      *              0             0               
+     7 x[R7,A]      *              0             0               
+     8 x[R8,A]      *              0             0               
+     9 x[R1,B]      *              0             0               
+    10 x[R2,B]      *              0             0               
+    11 x[R3,B]      *              0             0               
+    12 x[R4,B]      *              0             0               
+    13 x[R5,B]      *              0             0               
+    14 x[R6,B]      *              0             0               
+    15 x[R7,B]      *              1             0               
+    16 x[R8,B]      *              0             0               
+    17 x[R1,C]      *              0             0               
+    18 x[R2,C]      *              0             0               
+    19 x[R3,C]      *              0             0               
+    20 x[R4,C]      *              0             0               
+    21 x[R5,C]      *              0             0               
+    22 x[R6,C]      *              0             0               
+    23 x[R7,C]      *              1             0               
+    24 x[R8,C]      *              0             0               
+    25 x[R1,D]      *              1             0               
+    26 x[R2,D]      *              0             0               
+    27 x[R3,D]      *              0             0               
+    28 x[R4,D]      *              0             0               
+    29 x[R5,D]      *              0             0               
+    30 x[R6,D]      *              0             0               
+    31 x[R7,D]      *              0             0               
+    32 x[R8,D]      *              0             0               
+    33 x[R1,E]      *              0             0               
+    34 x[R2,E]      *              0             0               
+    35 x[R3,E]      *              0             0               
+    36 x[R4,E]      *              1             0               
+    37 x[R5,E]      *              0             0               
+    38 x[R6,E]      *              0             0               
+    39 x[R7,E]      *              0             0               
+    40 x[R8,E]      *              0             0               
+    41 x[R1,F]      *              0             0               
+    42 x[R2,F]      *              1             0               
+    43 x[R3,F]      *              0             0               
+    44 x[R4,F]      *              0             0               
+    45 x[R5,F]      *              0             0               
+    46 x[R6,F]      *              0             0               
+    47 x[R7,F]      *              0             0               
+    48 x[R8,F]      *              0             0               
+    49 x[R1,G]      *              0             0               
+    50 x[R2,G]      *              1             0               
+    51 x[R3,G]      *              0             0               
+    52 x[R4,G]      *              0             0               
+    53 x[R5,G]      *              0             0               
+    54 x[R6,G]      *              0             0               
+    55 x[R7,G]      *              0             0               
+    56 x[R8,G]      *              0             0               
+    57 x[R1,H]      *              0             0               
+    58 x[R2,H]      *              0             0               
+    59 x[R3,H]      *              0             0               
+    60 x[R4,H]      *              0             0               
+    61 x[R5,H]      *              0             0               
+    62 x[R6,H]      *              0             0               
+    63 x[R7,H]      *              0             0               
+    64 x[R8,H]      *              1             0               
+    65 x[R1,I]      *              0             0               
+    66 x[R2,I]      *              0             0               
+    67 x[R3,I]      *              0             0               
+    68 x[R4,I]      *              1             0               
+    69 x[R5,I]      *              0             0               
+    70 x[R6,I]      *              0             0               
+    71 x[R7,I]      *              0             0               
+    72 x[R8,I]      *              0             0               
+    73 x[R1,J]      *              0             0               
+    74 x[R2,J]      *              0             0               
+    75 x[R3,J]      *              0             0               
+    76 x[R4,J]      *              1             0               
+    77 x[R5,J]      *              0             0               
+    78 x[R6,J]      *              0             0               
+    79 x[R7,J]      *              0             0               
+    80 x[R8,J]      *              0             0               
+    81 x[R1,K]      *              0             0               
+    82 x[R2,K]      *              0             0               
+    83 x[R3,K]      *              0             0               
+    84 x[R4,K]      *              0             0               
+    85 x[R5,K]      *              1             0               
+    86 x[R6,K]      *              0             0               
+    87 x[R7,K]      *              0             0               
+    88 x[R8,K]      *              0             0               
+    89 x[R1,L]      *              0             0               
+    90 x[R2,L]      *              0             0               
+    91 x[R3,L]      *              0             0               
+    92 x[R4,L]      *              0             0               
+    93 x[R5,L]      *              1             0               
+    94 x[R6,L]      *              0             0               
+    95 x[R7,L]      *              0             0               
+    96 x[R8,L]      *              0             0               
+    97 x[R1,M]      *              0             0               
+    98 x[R2,M]      *              0             0               
+    99 x[R3,M]      *              0             0               
+   100 x[R4,M]      *              0             0               
+   101 x[R5,M]      *              0             0               
+   102 x[R6,M]      *              1             0               
+   103 x[R7,M]      *              0             0               
+   104 x[R8,M]      *              0             0               
+   105 x[R1,N]      *              0             0               
+   106 x[R2,N]      *              0             0               
+   107 x[R3,N]      *              0             0               
+   108 x[R4,N]      *              0             0               
+   109 x[R5,N]      *              0             0               
+   110 x[R6,N]      *              1             0               
+   111 x[R7,N]      *              0             0               
+   112 x[R8,N]      *              0             0               
+   113 x[R1,O]      *              0             0               
+   114 x[R2,O]      *              0             0               
+   115 x[R3,O]      *              0             0               
+   116 x[R4,O]      *              0             0               
+   117 x[R5,O]      *              0             0               
+   118 x[R6,O]      *              0             0               
+   119 x[R7,O]      *              0             0               
+   120 x[R8,O]      *              1             0               
+   121 x[R1,P]      *              0             0               
+   122 x[R2,P]      *              0             0               
+   123 x[R3,P]      *              1             0               
+   124 x[R4,P]      *              0             0               
+   125 x[R5,P]      *              0             0               
+   126 x[R6,P]      *              0             0               
+   127 x[R7,P]      *              0             0               
+   128 x[R8,P]      *              0             0               
+   129 x[R1,Q]      *              0             0               
+   130 x[R2,Q]      *              0             0               
+   131 x[R3,Q]      *              1             0               
+   132 x[R4,Q]      *              0             0               
+   133 x[R5,Q]      *              0             0               
+   134 x[R6,Q]      *              0             0               
+   135 x[R7,Q]      *              0             0               
+   136 x[R8,Q]      *              0             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

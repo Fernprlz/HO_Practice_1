@@ -3,11 +3,11 @@ Rows:       18
 Columns:    9 (9 integer, 0 binary)
 Non-zeros:  61
 Status:     INTEGER OPTIMAL
-Objective:  Tiempo_Espera_1 = 84 (MINimum)
+Objective:  Tiempo_Espera_1 = 84.33333333 (MINimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 rest1A                    124                         125 
+     1 rest1A                    125                         125 
      2 rest2A[Este,Maquina_Exp]
                                    2             2               
      3 rest2A[Este,Torno]
@@ -17,9 +17,9 @@ Objective:  Tiempo_Espera_1 = 84 (MINimum)
      5 rest3_1A[Norte,Maquina_Exp]
                                    1             1               
      6 rest3_1A[Norte,Torno]
-                                   4             1               
+                                   1             1               
      7 rest3_1A[Norte,Persona]
-                                   2             1               
+                                   4             1               
      8 rest3_2A[Oeste,Maquina_Exp]
                                    1             1               
      9 rest3_2A[Oeste,Torno]
@@ -27,15 +27,15 @@ Objective:  Tiempo_Espera_1 = 84 (MINimum)
     10 rest3_2A[Oeste,Persona]
                                    2             1               
     11 rest4A[Norte,Torno,Oeste]
-                                   0                          -0 
-    12 rest5A                     -1                          -0 
-    13 rest6A                     -1                          -0 
-    14 rest7A                      0                          -0 
+                                  -3                          -1 
+    12 rest5A                     -4                          -1 
+    13 rest6A                     -1                          -1 
+    14 rest7A                   -1.1                          -0 
     15 rest8A                      0                          -0 
-    16 rest9A                      2            -0               
-    17 rest10A                     2            -0               
+    16 rest9A                      3             1               
+    17 rest10A                     2             1               
     18 Tiempo_Espera_1
-                            -22.6667                             
+                            -22.3333                             
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
@@ -48,9 +48,9 @@ Objective:  Tiempo_Espera_1 = 84 (MINimum)
      4 y[Norte,Maquina_Exp]
                     *              1             0               
      5 y[Norte,Torno]
-                    *              4             0               
+                    *              1             0               
      6 y[Norte,Persona]
-                    *              2             0               
+                    *              4             0               
      7 y[Oeste,Maquina_Exp]
                     *              1             0               
      8 y[Oeste,Torno]
