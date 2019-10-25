@@ -59,7 +59,7 @@ s.t. rest6B{i in Robots}: sum{j in SalasCD} x[i,j] <= 2 * sum{j in SalasAB} x[i,
 s.t. rest8B{r in Robots}: sum{s in Salas} (x[r, s] * Energia_R_Sala[r, s]) <= Energia_total[r];
 
 /*///////- 9. TPO >= TPE·1.1*/
-s.t. rest9B: sum{r in Robots, o in Salas_Oeste} (x[r, o] * Tiempo_R_Sala[r, o]) >= -1 + (1.1 * (sum{r in Robots, e in Salas_Este} x[r, e] * Tiempo_R_Sala[r, e]));
+s.t. rest9B: sum{r in Robots, o in Salas_Oeste} (x[r, o] * Tiempo_R_Sala[r, o]) >= (1.1 * (sum{r in Robots, e in Salas_Este} x[r, e] * Tiempo_R_Sala[r, e])) - 1;
 
 /*/////// Funcion Objetivo ///////*/
 minimize Tiempo_Espera: sum{r in Robots, s in Salas} (x[r, s] * Tiempo_R_Sala[r, s]);

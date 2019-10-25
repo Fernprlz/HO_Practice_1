@@ -9,17 +9,17 @@ Objective:  Tiempo_Espera_1 = 84.33333333 (MINimum)
 ------ ------------    ------------- ------------- -------------
      1 rest1A                    125                         125 
      2 rest2A[Este,Maquina_Exp]
-                                   2             2               
+                                   3             2               
      3 rest2A[Este,Torno]
-                                   4             2               
+                                   3             2               
      4 rest2A[Este,Persona]
                                    2             2               
      5 rest3_1A[Norte,Maquina_Exp]
-                                   1             1               
+                                   2             1               
      6 rest3_1A[Norte,Torno]
-                                   1             1               
+                                   2             1               
      7 rest3_1A[Norte,Persona]
-                                   4             1               
+                                   3             1               
      8 rest3_2A[Oeste,Maquina_Exp]
                                    1             1               
      9 rest3_2A[Oeste,Torno]
@@ -27,30 +27,30 @@ Objective:  Tiempo_Espera_1 = 84.33333333 (MINimum)
     10 rest3_2A[Oeste,Persona]
                                    2             1               
     11 rest4A[Norte,Torno,Oeste]
-                                  -3                          -1 
-    12 rest5A                     -4                          -1 
+                                  -2                          -1 
+    12 rest5A                     -2                          -1 
     13 rest6A                     -1                          -1 
-    14 rest7A                   -1.1                          -0 
-    15 rest8A                      0                          -0 
-    16 rest9A                      3             1               
-    17 rest10A                     2             1               
+    14 rest7A                   -3.2                          -0 
+    15 rest8A                     -1                          -0 
+    16 rest9A                      1             1               
+    17 rest10A                     1             1               
     18 Tiempo_Espera_1
                             -22.3333                             
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
      1 y[Este,Maquina_Exp]
-                    *              2             0               
+                    *              3             0               
      2 y[Este,Torno]
-                    *              4             0               
+                    *              3             0               
      3 y[Este,Persona]
                     *              2             0               
      4 y[Norte,Maquina_Exp]
-                    *              1             0               
+                    *              2             0               
      5 y[Norte,Torno]
-                    *              1             0               
+                    *              2             0               
      6 y[Norte,Persona]
-                    *              4             0               
+                    *              3             0               
      7 y[Oeste,Maquina_Exp]
                     *              1             0               
      8 y[Oeste,Torno]
