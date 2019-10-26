@@ -10,8 +10,6 @@ param Energia_objeto{r in Robots};
 param Energia_total{r in Robots};
 
 set Salas;
-set SalaA within Salas;
-set SalaB within Salas;
 set SalasAB within Salas;
 set SalasCD within Salas;
 set Salas_Oeste within Salas;
@@ -58,7 +56,7 @@ s.t. rest6B{i in Robots}: sum{j in SalasCD} x[i,j] <= 2 * sum{j in SalasAB} x[i,
 /*///////- 8. Un robot no puede estar en una sala que requiera + energia de la disponible*/
 s.t. rest8B{r in Robots}: sum{s in Salas} (x[r, s] * Energia_R_Sala[r, s]) <= Energia_total[r];
 
-/*///////- 9. TPO >= TPE·1.1*/
+/*///////- 9. TPO > TPE·1.1*/
 s.t. rest9B: sum{r in Robots, o in Salas_Oeste} (x[r, o] * Tiempo_R_Sala[r, o]) >= (1.1 * (sum{r in Robots, e in Salas_Este} x[r, e] * Tiempo_R_Sala[r, e])) - 1;
 
 /*/////// Funcion Objetivo ///////*/
