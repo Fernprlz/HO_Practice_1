@@ -5,8 +5,6 @@ set Robots356 := R3, R5, R6;
 set Robots24 := R2, R4;
 
 set Salas := A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q;
-set SalaA := A;
-set SalaB := B;
 set SalasAB := A, B;
 set SalasCD := C, D;
 set Salas_Oeste := A, B, C, D, E, F, G, H, I, J;
